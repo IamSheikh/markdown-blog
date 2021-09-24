@@ -17,12 +17,7 @@ const articleSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  },
-  slug: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  }
 });
 
 module.exports = mongoose.model("articles", articleSchema);
